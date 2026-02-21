@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.9.3"
+  required_version = ">= 1.9.3"
 
   required_providers {
     aws = {
@@ -15,8 +15,4 @@ terraform {
     dynamodb_table = "bharathiraja-lock-files"
     encrypt        = true
   }
-}
-
-provider "aws" {
-  region = var.aws_region
 }
